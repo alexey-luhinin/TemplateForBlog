@@ -1,0 +1,207 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+body{
+	font-family: 'Droid Sans';
+}
+
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+
+/*HEADER*/
+
+.content{
+	flex: 1 0 auto;
+}
+
+.header {
+	background-color: #3a3d40;
+	border: 1px solid #000000;
+	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.25);
+	height: 93px;	
+}
+
+.header__logo-img {
+	width: 200px;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.container--flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.header__top-menu {
+	display: flex;
+}
+
+.header__menu-item {
+	padding: 0 20px;
+	border-right: 1px solid #000;
+	box-shadow: 1px 0 0 rgba(255, 255, 255, 0.04);
+}
+
+.header__menu-item:hover{
+	background-color: #35373a;
+}
+
+.header__menu-item--border{
+	border-left: 1px solid #000;
+}
+
+.header__menu-link {
+	font-family: 'Roboto Slab', serif;
+	color: #d4d4d4;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 88px;
+}
+
+.header__menu-link:hover {
+	color: #86acc4;
+}
+
+/*HEADER*/
+
+/*CONTENT*/
+
+
+
+.content__content-items{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.content__description{
+	padding: 10px 20px;
+}
+
+.content__item{
+	width: 30%;
+	background-color: #f7f7f7;
+	margin-bottom: 20px;
+}
+
+.content__item-img{
+	width: 100%;
+}
+
+.content__item-title{
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 26px;
+	color: #484848;
+	margin-bottom: 10px;
+}
+
+.content__item-text{
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.content__divider{
+	width: 100%;
+	padding: 20px 0;
+}
+
+.content__info{
+	display: flex;
+	justify-content: space-between;
+}
+
+.content__comments::before{
+	content: url('../img/comments.png');
+	position: relative;
+	top: 1px;
+}
+
+.content__date::before{
+	content: url('../img/calendar.png');
+	position: relative;
+	top: 1px;
+}
+
+.content__comments-count{
+	color: #999999;
+	font-family: "Droid Sans";
+	font-size: 11px;
+	line-height: 20px;
+}
+
+.content__date-text{
+	color: #999999;
+	font-family: "Droid Sans";
+	font-size: 11px;
+	line-height: 20px;
+}
+
+
+/*CONTENT*/
+
+/*FOOTER*/
+
+.footer{
+	height: 72px;
+	box-shadow: inset 0 2px 0 rgba(47, 50, 53, 0.44);
+	background-color: #2f3235;
+}
+
+.footer__copyright{
+	color: #afafaf;
+	font-family: "Droid Sans";
+	font-size: 13px;
+	line-height: 72px;
+}
+
+/*FOOTER*/
